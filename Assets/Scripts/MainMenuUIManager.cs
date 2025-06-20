@@ -95,7 +95,7 @@ public class MainMenuUIManager : MonoBehaviour
         }
         else
         {
-            StartCoroutine(ShowJoinError("Invalid room code. Please enter a valid 5-character code."));
+            StartCoroutine(ShowJoinError("Invalid room code. Please enter a valid 5 character code."));
         }
     }
 
