@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f720d780548fdba4787add8bc45dd70d
+guid: 1190ad9a88f524dfb9732a9a01534c71
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -8,67 +8,57 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Cymbals
-    second: {fileID: 2100000, guid: d45f0212e49752843a2ad71739befa12, type: 2}
+    second: {fileID: 2100000, guid: 86199667f05fc410ab8bac99841d3dbd, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Drum cloth
-    second: {fileID: 2100000, guid: 149dfe384a6f34d4b97659e36ee5b03e, type: 2}
+    second: {fileID: 2100000, guid: b259f0e89dd2d4c12becaaf3c4ed4f5c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Drum cloth.001
-    second: {fileID: 2100000, guid: 4969c6d405cfcd94f979e1b9317f13e2, type: 2}
+    second: {fileID: 2100000, guid: 4f7e2f05212484f65b30a9862ade753e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Drum cloth.002
-    second: {fileID: 2100000, guid: 281779c808a9e9941a33d573807ba083, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Drum cloth.003
-    second: {fileID: 2100000, guid: 4e7209ed4df448b4a8d77b32a5ce70fb, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Drum cloth.004
-    second: {fileID: 2100000, guid: eb8637f4a9cb91c43a9fe62baa81751c, type: 2}
+    second: {fileID: 2100000, guid: 010ce0bfce0bd40fdb114ac43f1e6a57, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Drums
-    second: {fileID: 2100000, guid: 28959bab9c799c5498137a372829265c, type: 2}
+    second: {fileID: 2100000, guid: 09e2c19377bf94c7fa931cbea5b3319f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Legs
-    second: {fileID: 2100000, guid: 09c3961e15eefc845a3a8a0fff0e3aaa, type: 2}
+    second: {fileID: 2100000, guid: ab43c55fbe6cd4452a4414cda8638f13, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Metal
-    second: {fileID: 2100000, guid: 486f52a8c0ee1c6429de46286d84397a, type: 2}
+    second: {fileID: 2100000, guid: 6ff63baa789dc454bbc5a17f29dc824c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Metal.001
-    second: {fileID: 2100000, guid: 9f4addb06681ca6469f422582dcd6728, type: 2}
+    second: {fileID: 2100000, guid: 7084fcd5f886d4b2684e83a1408d12d2, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Plastic
-    second: {fileID: 2100000, guid: 6ec2140c8d27f064488c8f63cef5b860, type: 2}
+    second: {fileID: 2100000, guid: 95521ebcc6f234bb6bbb9d8c79882a46, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Plastic 02
-    second: {fileID: 2100000, guid: 7f69c4843a2931d4e80bb6300ca4a16d, type: 2}
+    second: {fileID: 2100000, guid: 1f5383160d19a47f596fc5e9bbd1158e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: seat
-    second: {fileID: 2100000, guid: 4d8fbebd95eb6274da89420dab7a847f, type: 2}
+    second: {fileID: 2100000, guid: b1dc088c148e44b4c813d792bc6931ff, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
