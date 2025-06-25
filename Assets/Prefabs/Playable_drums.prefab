@@ -171,6 +171,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keySound: {fileID: 8300000, guid: 840a20995063b8d45b65f420e4159a49, type: 3}
+  bounceAmount: 0.005
+  bounceSpeed: 10
+  minForce: 0.2
+  maxForce: 3
+  maxVolume: 1
 --- !u!1 &212509668064467988
 GameObject:
   m_ObjectHideFlags: 0
@@ -837,7 +842,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.35, y: 0.35, z: 0.35}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7108661041642909218}
@@ -1419,7 +1424,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 14
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!82 &3588237114489801437
 AudioSource:
@@ -1530,6 +1535,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keySound: {fileID: 8300000, guid: 55ae9d5462dc4ab44815fcee65ad008c, type: 3}
+  bounceAmount: 0.005
+  bounceSpeed: 10
+  minForce: 0.2
+  maxForce: 3
+  maxVolume: 1
 --- !u!1 &7103816046081574497
 GameObject:
   m_ObjectHideFlags: 0
@@ -1590,7 +1600,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 14
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!82 &115231124096278258
 AudioSource:
@@ -1701,6 +1711,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keySound: {fileID: 8300000, guid: 55ae9d5462dc4ab44815fcee65ad008c, type: 3}
+  bounceAmount: 0.005
+  bounceSpeed: 10
+  minForce: 0.2
+  maxForce: 3
+  maxVolume: 1
 --- !u!1 &7111375709923185793
 GameObject:
   m_ObjectHideFlags: 0
@@ -1761,7 +1776,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 14
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!82 &3949333969224635269
 AudioSource:
@@ -1872,6 +1887,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keySound: {fileID: 8300000, guid: 4fd01d966dd100b40a46fd0fb133dd27, type: 3}
+  bounceAmount: 0.005
+  bounceSpeed: 10
+  minForce: 0.2
+  maxForce: 3
+  maxVolume: 1
 --- !u!1 &7394563625936936386
 GameObject:
   m_ObjectHideFlags: 0
@@ -2043,6 +2063,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keySound: {fileID: 8300000, guid: bef78d75421a27b4280b1ae450e8eab7, type: 3}
+  bounceAmount: 0.005
+  bounceSpeed: 10
+  minForce: 0.2
+  maxForce: 3
+  maxVolume: 1
 --- !u!1 &7478504178900467676
 GameObject:
   m_ObjectHideFlags: 0
@@ -2214,6 +2239,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keySound: {fileID: 8300000, guid: 2028656e6128b3f43a705643b55192d3, type: 3}
+  bounceAmount: 0.005
+  bounceSpeed: 10
+  minForce: 0.2
+  maxForce: 3
+  maxVolume: 1
 --- !u!1 &7558111882025215442
 GameObject:
   m_ObjectHideFlags: 0
@@ -2673,6 +2703,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keySound: {fileID: 8300000, guid: 5fa43e2f6afaada478e00a516fd830a8, type: 3}
+  bounceAmount: 0.005
+  bounceSpeed: 10
+  minForce: 0.2
+  maxForce: 3
+  maxVolume: 1
 --- !u!1 &8407982578862426388
 GameObject:
   m_ObjectHideFlags: 0
@@ -2733,7 +2768,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 14
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!82 &6808808157405917635
 AudioSource:
@@ -2844,6 +2879,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keySound: {fileID: 8300000, guid: 2126c89f2f71ceb40a52fed75791dbd5, type: 3}
+  bounceAmount: 0.005
+  bounceSpeed: 10
+  minForce: 0.2
+  maxForce: 3
+  maxVolume: 1
 --- !u!1 &8420596249366872874
 GameObject:
   m_ObjectHideFlags: 0
@@ -3015,6 +3055,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keySound: {fileID: 8300000, guid: 11168ecfb9f6aa240bdee8fd6f77634c, type: 3}
+  bounceAmount: 0.005
+  bounceSpeed: 10
+  minForce: 0.2
+  maxForce: 3
+  maxVolume: 1
 --- !u!1 &8617457233670343136
 GameObject:
   m_ObjectHideFlags: 0
@@ -3289,7 +3334,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 14
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!82 &3196479182681692563
 AudioSource:
@@ -3400,3 +3445,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keySound: {fileID: 8300000, guid: 2126c89f2f71ceb40a52fed75791dbd5, type: 3}
+  bounceAmount: 0.005
+  bounceSpeed: 10
+  minForce: 0.2
+  maxForce: 3
+  maxVolume: 1
