@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1007237387581003406}
   - component: {fileID: 9189026969918483660}
   - component: {fileID: 2814667630031240160}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: XylophoneStickGrabbable
   m_TagString: Stick
   m_Icon: {fileID: 0}

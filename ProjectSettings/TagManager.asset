@@ -14,8 +14,8 @@ TagManager:
   - UI
   - HandHitbox
   - HandInteractable
-  - 
-  - 
+  - StickHitbox
+  - StickInteractable
   - 
   - 
   - 

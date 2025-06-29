@@ -25,25 +25,17 @@ public class XylophoneKey : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Stick"))
+        if (!collision.gameObject.CompareTag("Stick")) return;
+
+        Collider col = collision.collider;
+        if (col is not CapsuleCollider) return; // quick hack
+
+        Debug.Log($"Hit by: {collision.gameObject.name}");
+
+        if (!isBouncing)
         {
-            // Rigidbody stickRb = collision.rigidbody;
-            // if (stickRb != null)
-            // {
-            //     float force = stickRb.velocity.magnitude * stickRb.mass;
-            //     Debug.Log($"Collision force: {force}");
-            //     if (force >= minForce)
-            //     {
-            //         float volume = Mathf.Clamp(force / maxForce, 0f, 1f) * maxVolume;
-            //         PlaySound(volume);
-            //     }
-            // }
-            Debug.Log($"Hit by: {collision.gameObject.name}");
-            if (!isBouncing)
-            {
-                PlaySound(1f);
-                StartCoroutine(BounceEffect());
-            }
+            PlaySound(1f);
+            StartCoroutine(BounceEffect());
         }
     }
 

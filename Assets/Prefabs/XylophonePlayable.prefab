@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5493469457767966951}
   - component: {fileID: 334717442302753078}
   - component: {fileID: 5754494787546519009}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: xylophone4.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 6311168225061554256}
   - component: {fileID: 2498954664290038601}
   - component: {fileID: 5965212282808349236}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: xylophone4.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -383,6 +383,9 @@ MonoBehaviour:
   keySound: {fileID: 8300000, guid: 89f69a64fc35e3d4ba0869335ac04203, type: 3}
   bounceAmount: 0.005
   bounceSpeed: 10
+  minForce: 0.2
+  maxForce: 3
+  maxVolume: 1
 --- !u!1 &948112024179293306
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,7 +398,7 @@ GameObject:
   - component: {fileID: 4787715764487060607}
   - component: {fileID: 3780539484174132622}
   - component: {fileID: 1083077521818875705}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: xylophone4.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -661,6 +664,9 @@ MonoBehaviour:
   keySound: {fileID: 8300000, guid: 38446001e7fae36468ab9a253f707256, type: 3}
   bounceAmount: 0.005
   bounceSpeed: 10
+  minForce: 0.2
+  maxForce: 3
+  maxVolume: 1
 --- !u!1 &1243901540103566926
 GameObject:
   m_ObjectHideFlags: 0
@@ -834,6 +840,9 @@ MonoBehaviour:
   keySound: {fileID: 8300000, guid: a0a0dec05f5ecc646ae386e7988ec4fe, type: 3}
   bounceAmount: 0.005
   bounceSpeed: 10
+  minForce: 0.2
+  maxForce: 3
+  maxVolume: 1
 --- !u!1 &1293179511583389779
 GameObject:
   m_ObjectHideFlags: 0
@@ -846,7 +855,7 @@ GameObject:
   - component: {fileID: 1299047122237200992}
   - component: {fileID: 8581191754174600790}
   - component: {fileID: 2897792901467056352}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: xylophone4.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1112,6 +1121,9 @@ MonoBehaviour:
   keySound: {fileID: 8300000, guid: 492c738da69ed4547aca60a19d2bab80, type: 3}
   bounceAmount: 0.005
   bounceSpeed: 10
+  minForce: 0.2
+  maxForce: 3
+  maxVolume: 1
 --- !u!1 &3487457871388157267
 GameObject:
   m_ObjectHideFlags: 0
@@ -1124,7 +1136,7 @@ GameObject:
   - component: {fileID: 1092721524868033284}
   - component: {fileID: 7749290882171924548}
   - component: {fileID: 5942630559912139570}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: xylophone4.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1461,6 +1473,9 @@ MonoBehaviour:
   keySound: {fileID: 8300000, guid: 7d68d3e8e25f7c749b28f644f1566200, type: 3}
   bounceAmount: 0.005
   bounceSpeed: 10
+  minForce: 0.2
+  maxForce: 3
+  maxVolume: 1
 --- !u!1 &6736640043938555253
 GameObject:
   m_ObjectHideFlags: 0
@@ -1634,6 +1649,9 @@ MonoBehaviour:
   keySound: {fileID: 8300000, guid: 1acd16c6da11a2942a6f69377dd771fa, type: 3}
   bounceAmount: 0.005
   bounceSpeed: 10
+  minForce: 0.2
+  maxForce: 3
+  maxVolume: 1
 --- !u!1 &7388851549722008891
 GameObject:
   m_ObjectHideFlags: 0
@@ -1646,7 +1664,7 @@ GameObject:
   - component: {fileID: 1335977691820663137}
   - component: {fileID: 3554829321055408581}
   - component: {fileID: 4129318710781445844}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: xylophone4.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1751,7 +1769,7 @@ GameObject:
   - component: {fileID: 2524843566093518369}
   - component: {fileID: 569478255036233809}
   - component: {fileID: 1461244495079209776}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: xylophone4.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2132,3 +2150,6 @@ MonoBehaviour:
   keySound: {fileID: 8300000, guid: 28e87c42da798b941aa1396ebb775d14, type: 3}
   bounceAmount: 0.005
   bounceSpeed: 10
+  minForce: 0.2
+  maxForce: 3
+  maxVolume: 1
