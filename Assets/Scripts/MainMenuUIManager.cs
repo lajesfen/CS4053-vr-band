@@ -74,15 +74,18 @@ public class MainMenuUIManager : MonoBehaviour
         return new string(code);
     }
 
-    private void JoinRoom()
+    private void JoinRoom(string sessionCode)
     {
+        NetworkManager.Instance.JoinSession(sessionCode);
         Debug.Log("Joining room...");
         SceneManager.LoadScene("MainScene");
     }
 
     public void CreateAndJoinRoom()
     {
-        JoinRoom();
+        NetworkManager.Instance.CreateSession(createRoomCodeText.text);
+        JoinRoom(createRoomCodeText.text);
+        Debug.Log("Creating and joining room...");
     }
 
     public void TryJoinRoom()
@@ -91,7 +94,7 @@ public class MainMenuUIManager : MonoBehaviour
 
         if (IsCodeValid(code))
         {
-            JoinRoom();
+            JoinRoom(code);
         }
         else
         {
