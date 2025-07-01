@@ -98,15 +98,16 @@ public class MainMenuUIManager : MonoBehaviour
     public void TryJoinRoom()
     {
         string code = joinCodeInput.text;
+        JoinRoom("NCVOX");
 
-        if (IsCodeValid(code))
-        {
-            JoinRoom(code);
-        }
-        else
-        {
-            StartCoroutine(ShowJoinError("Invalid room code. Please enter a valid 5 character code."));
-        }
+        // if (IsCodeValid(code))
+        // {
+        //     JoinRoom(code);
+        // }
+        // else
+        // {
+        //     StartCoroutine(ShowJoinError("Invalid room code. Please enter a valid 5 character code."));
+        // }
     }
 
     private bool IsCodeValid(string code)

@@ -458,8 +458,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keySound: {fileID: 8300000, guid: bef78d75421a27b4280b1ae450e8eab7, type: 3}
-  bounceAmount: 0.0005
-  bounceSpeed: 10
+  bounceAmount: 0.0002
+  bounceSpeed: 30
   minForce: 0.2
   maxForce: 3
   maxVolume: 1
@@ -626,8 +626,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keySound: {fileID: 8300000, guid: 11168ecfb9f6aa240bdee8fd6f77634c, type: 3}
-  bounceAmount: 0.0005
-  bounceSpeed: 10
+  bounceAmount: 0.0002
+  bounceSpeed: 30
   minForce: 0.2
   maxForce: 3
   maxVolume: 1
@@ -799,8 +799,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keySound: {fileID: 8300000, guid: 2028656e6128b3f43a705643b55192d3, type: 3}
-  bounceAmount: 0.0005
-  bounceSpeed: 10
+  bounceAmount: 0.0002
+  bounceSpeed: 30
   minForce: 0.2
   maxForce: 3
   maxVolume: 1
@@ -968,7 +968,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keySound: {fileID: 8300000, guid: 55ae9d5462dc4ab44815fcee65ad008c, type: 3}
   bounceAmount: 0.0005
-  bounceSpeed: 10
+  bounceSpeed: 20
   minForce: 0.2
   maxForce: 3
   maxVolume: 1
@@ -1136,7 +1136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keySound: {fileID: 8300000, guid: 2126c89f2f71ceb40a52fed75791dbd5, type: 3}
   bounceAmount: 0.0005
-  bounceSpeed: 10
+  bounceSpeed: 20
   minForce: 0.2
   maxForce: 3
   maxVolume: 1
@@ -1303,8 +1303,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keySound: {fileID: 8300000, guid: 840a20995063b8d45b65f420e4159a49, type: 3}
-  bounceAmount: 0.0005
-  bounceSpeed: 10
+  bounceAmount: 0.0002
+  bounceSpeed: 30
   minForce: 0.2
   maxForce: 3
   maxVolume: 1
@@ -1471,8 +1471,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keySound: {fileID: 8300000, guid: 5fa43e2f6afaada478e00a516fd830a8, type: 3}
-  bounceAmount: 0.0005
-  bounceSpeed: 10
+  bounceAmount: 0.0002
+  bounceSpeed: 30
   minForce: 0.2
   maxForce: 3
   maxVolume: 1
@@ -1640,7 +1640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keySound: {fileID: 8300000, guid: 4fd01d966dd100b40a46fd0fb133dd27, type: 3}
   bounceAmount: 0.0005
-  bounceSpeed: 10
+  bounceSpeed: 20
   minForce: 0.2
   maxForce: 3
   maxVolume: 1
@@ -1808,7 +1808,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keySound: {fileID: 8300000, guid: 2126c89f2f71ceb40a52fed75791dbd5, type: 3}
   bounceAmount: 0.0005
-  bounceSpeed: 10
+  bounceSpeed: 20
   minForce: 0.2
   maxForce: 3
   maxVolume: 1
