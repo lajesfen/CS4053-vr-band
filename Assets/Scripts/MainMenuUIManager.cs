@@ -85,29 +85,26 @@ public class MainMenuUIManager : MonoBehaviour
     {
         NetworkManager.Instance.JoinSession(sessionCode);
         Debug.Log("Joining room...");
-        SceneManager.LoadScene("MainScene");
     }
 
     public void CreateAndJoinRoom()
     {
         NetworkManager.Instance.CreateSession(createRoomCodeText.text);
-        JoinRoom(createRoomCodeText.text);
         Debug.Log("Creating and joining room...");
     }
 
     public void TryJoinRoom()
     {
         string code = joinCodeInput.text;
-        JoinRoom("NCVOX");
 
-        // if (IsCodeValid(code))
-        // {
-        //     JoinRoom(code);
-        // }
-        // else
-        // {
-        //     StartCoroutine(ShowJoinError("Invalid room code. Please enter a valid 5 character code."));
-        // }
+        if (IsCodeValid(code))
+        {
+            JoinRoom(code);
+        }
+        else
+        {
+            StartCoroutine(ShowJoinError("Invalid room code. Please enter a valid 5 character code."));
+        }
     }
 
     private bool IsCodeValid(string code)
