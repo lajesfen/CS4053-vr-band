@@ -19,6 +19,8 @@ public class MainMenuUIManager : MonoBehaviour
     public TMP_Text joinErrorText;
     public float errorDisplayDuration = 2f;
 
+    private TouchScreenKeyboard keyboard;
+
     private void Start()
     {
         joinErrorText?.gameObject.SetActive(false);
@@ -47,6 +49,11 @@ public class MainMenuUIManager : MonoBehaviour
     {
         HideAllMenus();
         uiMain.SetActive(true);
+    }
+
+    public void ShowKeyboard()
+    {
+        keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default);
     }
 
     private void HideAllMenus()
