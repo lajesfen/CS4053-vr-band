@@ -34,6 +34,6 @@ public class MainMenuUIManager : MonoBehaviour
 
     public void JoinGame()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("MainScene");
     }
 }
