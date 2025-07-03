@@ -3,7 +3,62 @@ guid: b92a3cc8e6af6ed4d9a8dc7245156aa8
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cymbals
+    second: {fileID: 2100000, guid: bd3ad793dd18e4579ba9ae075d9f6613, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cymbals.001
+    second: {fileID: 2100000, guid: b1dc2c8aeb57148adb59458b150b5dd5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Drum cloth
+    second: {fileID: 2100000, guid: 22910816298c34394961536247f0af40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Drum cloth.001
+    second: {fileID: 2100000, guid: e59cfb01cb4d740cf9f96b574b35dbdd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Drum cloth.002
+    second: {fileID: 2100000, guid: fdd5dc70fafbc4c77b6e319601ef673f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Drums
+    second: {fileID: 2100000, guid: baefe2056d4f845f289bb741d509e796, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Legs
+    second: {fileID: 2100000, guid: e3577b7fdeab349c4b66195277037cb2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal
+    second: {fileID: 2100000, guid: adcc765e7e3ee4d69b431efd943a9a54, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic
+    second: {fileID: 2100000, guid: 82d504e00486d485d997acd52bfee0b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic 02
+    second: {fileID: 2100000, guid: f4fb5649ea0d040adb788c438face1cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: text
+    second: {fileID: 2100000, guid: 79a6e7e19959b459380109bb2ae232ed, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
