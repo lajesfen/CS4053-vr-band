@@ -15,6 +15,7 @@ public class XylophoneKey : MonoBehaviour
     private AudioSource audioSource;
     private Vector3 originalPosition;
     private bool isBouncing = false;
+    private Rigidbody rb;
 
     void Awake()
     {
@@ -23,14 +24,29 @@ public class XylophoneKey : MonoBehaviour
         audioSource.playOnAwake = false;
     }
 
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
+
+    private void Update()
+    {
+        rb.isKinematic = false;
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
-        if (!collision.gameObject.CompareTag("Stick")) return;
+        if (!collision.gameObject.CompareTag("Stick"))
+        {
+            return;
+        }
 
         Collider col = collision.collider;
-        if (col is not CapsuleCollider) return; // quick hack
+        if (col is not CapsuleCollider) {
+            return; // quick hack
+        }
 
-        Debug.Log($"Hit by: {collision.gameObject.name}");
+        Debug.Log($"Contact: Hit by: {collision.gameObject.name}");
 
         if (!isBouncing)
         {
