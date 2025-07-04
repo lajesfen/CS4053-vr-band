@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.Netcode;
+using static Oculus.Interaction.Context;
 
 public class InstrumentManager : MonoBehaviour
 {
@@ -19,7 +21,19 @@ public class InstrumentManager : MonoBehaviour
         {
             if (item.name == prefabName && item.prefab != null)
             {
-                Instantiate(item.prefab, item.spawnLocation.position, item.spawnLocation.rotation);
+                GameObject instance = Instantiate(item.prefab, item.spawnLocation.position, item.spawnLocation.rotation);
+             
+                // Spawn it across the network
+                NetworkObject netObj = instance.GetComponent<NetworkObject>();
+                if (netObj != null)
+                {
+                    netObj.Spawn();  // Now it exists for all players
+                }
+                else
+                {
+                    Debug.LogError("Prefab is missing NetworkObject component.");
+                }
+
                 return;
             }
         }
