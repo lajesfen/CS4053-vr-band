@@ -214,9 +214,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6341578116650495021}
     m_Modifications:
+    - target: {fileID: 1241897141780821702, guid: 7e36251507d5a2047a7c84a9b9c06e16, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5006551213547576890, guid: 7e36251507d5a2047a7c84a9b9c06e16, type: 3}
       propertyPath: m_Name
       value: DrumsPlayable
+      objectReference: {fileID: 0}
+    - target: {fileID: 6406035134390253115, guid: 7e36251507d5a2047a7c84a9b9c06e16, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564466837601113554, guid: 7e36251507d5a2047a7c84a9b9c06e16, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 4189361156
       objectReference: {fileID: 0}
     - target: {fileID: 6942311253109551110, guid: 7e36251507d5a2047a7c84a9b9c06e16, type: 3}
       propertyPath: m_LocalPosition.x
