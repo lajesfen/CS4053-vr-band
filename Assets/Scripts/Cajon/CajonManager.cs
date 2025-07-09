@@ -1,7 +1,7 @@
-using Unity.Netcode;
 using UnityEngine;
+using System.Collections;
 
-public class CajonManager : NetworkBehaviour
+public class CajonManager : MonoBehaviour
 {
     [Header("Audio Setup")]
     [SerializeField] private AudioSource audioSource;
@@ -16,33 +16,22 @@ public class CajonManager : NetworkBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        if (!col.gameObject.CompareTag("Stick"))
-            return;
+        Debug.Log($"cajon hit by: {col.gameObject.name}");
+
+        if (col.gameObject.CompareTag("Stick"))
+        {
+
+        }
 
         float force = col.relativeVelocity.magnitude;
+
         Vector3 hitPoint = col.contacts[0].point;
         float height = transform.InverseTransformPoint(hitPoint).y;
 
-        // Call server RPC to notify hit with height and force
-        PlayHitServerRpc(height, force);
-    }
-
-    [ServerRpc(RequireOwnership = false)]
-    void PlayHitServerRpc(float height, float force)
-    {
-        // Tell all clients to play the sound with parameters
-        PlayHitClientRpc(height, force);
-    }
-
-    [ClientRpc]
-    void PlayHitClientRpc(float height, float force)
-    {
-        if (height > snareZoneY)
-        {
+        if (height > snareZoneY) {
             PlaySnare(force);
         }
-        else
-        {
+        else {
             PlayBass(force);
         }
     }
@@ -70,4 +59,5 @@ public class CajonManager : NetworkBehaviour
         audioSource.pitch = Random.Range(0.95f, 1.05f); // Slight pitch variety
         audioSource.PlayOneShot(clip, volume);
     }
+
 }
