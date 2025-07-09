@@ -41,6 +41,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8416978566433854721}
     m_Modifications:
+    - target: {fileID: -2989116864870974460, guid: c3f75c75e489e834cb9ffd5a8b57ac73, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 2536981260
+      objectReference: {fileID: 0}
     - target: {fileID: 1263260123806195267, guid: c3f75c75e489e834cb9ffd5a8b57ac73, type: 3}
       propertyPath: m_Name
       value: MaracaGrabbable_1
@@ -103,6 +107,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8416978566433854721}
     m_Modifications:
+    - target: {fileID: -2989116864870974460, guid: c3f75c75e489e834cb9ffd5a8b57ac73, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 2536981260
+      objectReference: {fileID: 0}
     - target: {fileID: 1263260123806195267, guid: c3f75c75e489e834cb9ffd5a8b57ac73, type: 3}
       propertyPath: m_Name
       value: MaracaGrabbable_2

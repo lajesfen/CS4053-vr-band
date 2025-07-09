@@ -218,6 +218,10 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3284018841677107482, guid: 7e36251507d5a2047a7c84a9b9c06e16, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 92656870
+      objectReference: {fileID: 0}
     - target: {fileID: 5006551213547576890, guid: 7e36251507d5a2047a7c84a9b9c06e16, type: 3}
       propertyPath: m_Name
       value: DrumsPlayable

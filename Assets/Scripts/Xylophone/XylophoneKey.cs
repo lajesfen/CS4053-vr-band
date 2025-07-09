@@ -1,16 +1,12 @@
+using Unity.Netcode;
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
-public class XylophoneKey : MonoBehaviour
+public class XylophoneKey : NetworkBehaviour
 {
     public AudioClip keySound;
     public float bounceAmount = 0.005f;
     public float bounceSpeed = 10f;
-
-    [Header("Dynamic Volume")]
-    public float minForce = 0.2f;   // below this = no sound
-    public float maxForce = 3f;     // anything above this = full volume
-    public float maxVolume = 1f;
 
     private AudioSource audioSource;
     private Vector3 originalPosition;
@@ -37,22 +33,29 @@ public class XylophoneKey : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (!collision.gameObject.CompareTag("Stick"))
-        {
             return;
-        }
 
-        Collider col = collision.collider;
-        if (col is not CapsuleCollider) {
-            return; // quick hack
-        }
+        if (collision.collider is not CapsuleCollider)
+            return;
 
-        Debug.Log($"Contact: Hit by: {collision.gameObject.name}");
-
-        if (!isBouncing)
+        if (IsServer || IsClient)
         {
-            PlaySound(1f);
-            StartCoroutine(BounceEffect());
+            PlaySoundServerRpc();
         }
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    void PlaySoundServerRpc()
+    {
+        PlaySoundClientRpc();
+    }
+
+    [ClientRpc]
+    void PlaySoundClientRpc()
+    {
+        PlaySound(1f);
+        if (!isBouncing)
+            StartCoroutine(BounceEffect());
     }
 
     void PlaySound(float volume)

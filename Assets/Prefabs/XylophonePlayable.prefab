@@ -385,9 +385,6 @@ MonoBehaviour:
   keySound: {fileID: 8300000, guid: 89f69a64fc35e3d4ba0869335ac04203, type: 3}
   bounceAmount: 0.005
   bounceSpeed: 10
-  minForce: 0.2
-  maxForce: 3
-  maxVolume: 1
 --- !u!114 &4364408226932572219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -711,9 +708,6 @@ MonoBehaviour:
   keySound: {fileID: 8300000, guid: 38446001e7fae36468ab9a253f707256, type: 3}
   bounceAmount: 0.005
   bounceSpeed: 10
-  minForce: 0.2
-  maxForce: 3
-  maxVolume: 1
 --- !u!114 &673981291744866598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -932,9 +926,6 @@ MonoBehaviour:
   keySound: {fileID: 8300000, guid: a0a0dec05f5ecc646ae386e7988ec4fe, type: 3}
   bounceAmount: 0.005
   bounceSpeed: 10
-  minForce: 0.2
-  maxForce: 3
-  maxVolume: 1
 --- !u!114 &9097470335269791252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1258,9 +1249,6 @@ MonoBehaviour:
   keySound: {fileID: 8300000, guid: 492c738da69ed4547aca60a19d2bab80, type: 3}
   bounceAmount: 0.005
   bounceSpeed: 10
-  minForce: 0.2
-  maxForce: 3
-  maxVolume: 1
 --- !u!114 &6486079710438344217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1418,8 +1406,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3895773178926267982}
-  - component: {fileID: 3054094091924381983}
-  - component: {fileID: 6389788379716536852}
+  - component: {fileID: 9209654785066825272}
+  - component: {fileID: 7170699558374257319}
   m_Layer: 0
   m_Name: XylophonePlayable
   m_TagString: Untagged
@@ -1443,7 +1431,7 @@ Transform:
   - {fileID: 3610119673815742004}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3054094091924381983
+--- !u!114 &9209654785066825272
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1464,7 +1452,7 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
---- !u!114 &6389788379716536852
+--- !u!114 &7170699558374257319
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1473,7 +1461,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3945312337856004418}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 405ed07ae7c26a141bac0d303d0a347a, type: 3}
+  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   UseUnreliableDeltas: 0
@@ -1709,9 +1697,6 @@ MonoBehaviour:
   keySound: {fileID: 8300000, guid: 7d68d3e8e25f7c749b28f644f1566200, type: 3}
   bounceAmount: 0.005
   bounceSpeed: 10
-  minForce: 0.2
-  maxForce: 3
-  maxVolume: 1
 --- !u!114 &5069348856221270230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1930,9 +1915,6 @@ MonoBehaviour:
   keySound: {fileID: 8300000, guid: 1acd16c6da11a2942a6f69377dd771fa, type: 3}
   bounceAmount: 0.005
   bounceSpeed: 10
-  minForce: 0.2
-  maxForce: 3
-  maxVolume: 1
 --- !u!114 &3551391826577232293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2476,9 +2458,6 @@ MonoBehaviour:
   keySound: {fileID: 8300000, guid: 28e87c42da798b941aa1396ebb775d14, type: 3}
   bounceAmount: 0.005
   bounceSpeed: 10
-  minForce: 0.2
-  maxForce: 3
-  maxVolume: 1
 --- !u!114 &218811461902870582
 MonoBehaviour:
   m_ObjectHideFlags: 0
