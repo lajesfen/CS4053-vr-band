@@ -41,8 +41,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6942311253109551110}
-  - component: {fileID: 6564466837601113554}
-  - component: {fileID: 541116439601321869}
+  - component: {fileID: 3284018841677107482}
+  - component: {fileID: 3776586391173155001}
   m_Layer: 0
   m_Name: DrumsPlayable
   m_TagString: Untagged
@@ -66,7 +66,7 @@ Transform:
   - {fileID: 7089632590864360563}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6564466837601113554
+--- !u!114 &3284018841677107482
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -78,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 926557055
+  GlobalObjectIdHash: 0
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
@@ -87,7 +87,7 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
---- !u!114 &541116439601321869
+--- !u!114 &3776586391173155001
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5006551213547576890}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 405ed07ae7c26a141bac0d303d0a347a, type: 3}
+  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   UseUnreliableDeltas: 0
@@ -568,9 +568,6 @@ MonoBehaviour:
   keySound: {fileID: 8300000, guid: bef78d75421a27b4280b1ae450e8eab7, type: 3}
   bounceAmount: 0.0002
   bounceSpeed: 30
-  minForce: 0.2
-  maxForce: 3
-  maxVolume: 1
 --- !u!64 &2636595238641035033
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -779,9 +776,6 @@ MonoBehaviour:
   keySound: {fileID: 8300000, guid: 11168ecfb9f6aa240bdee8fd6f77634c, type: 3}
   bounceAmount: 0.0002
   bounceSpeed: 30
-  minForce: 0.2
-  maxForce: 3
-  maxVolume: 1
 --- !u!64 &7589537579490207193
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -995,9 +989,6 @@ MonoBehaviour:
   keySound: {fileID: 8300000, guid: 2028656e6128b3f43a705643b55192d3, type: 3}
   bounceAmount: 0.0002
   bounceSpeed: 30
-  minForce: 0.2
-  maxForce: 3
-  maxVolume: 1
 --- !u!64 &5135858805097050904
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1206,9 +1197,6 @@ MonoBehaviour:
   keySound: {fileID: 8300000, guid: 55ae9d5462dc4ab44815fcee65ad008c, type: 3}
   bounceAmount: 0.0005
   bounceSpeed: 20
-  minForce: 0.2
-  maxForce: 3
-  maxVolume: 1
 --- !u!64 &8649119667630771437
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1417,9 +1405,6 @@ MonoBehaviour:
   keySound: {fileID: 8300000, guid: 2126c89f2f71ceb40a52fed75791dbd5, type: 3}
   bounceAmount: 0.0005
   bounceSpeed: 20
-  minForce: 0.2
-  maxForce: 3
-  maxVolume: 1
 --- !u!64 &339020640802720238
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1628,9 +1613,6 @@ MonoBehaviour:
   keySound: {fileID: 8300000, guid: 840a20995063b8d45b65f420e4159a49, type: 3}
   bounceAmount: 0.0002
   bounceSpeed: 30
-  minForce: 0.2
-  maxForce: 3
-  maxVolume: 1
 --- !u!64 &4452246401532537260
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1839,9 +1821,6 @@ MonoBehaviour:
   keySound: {fileID: 8300000, guid: 5fa43e2f6afaada478e00a516fd830a8, type: 3}
   bounceAmount: 0.0002
   bounceSpeed: 30
-  minForce: 0.2
-  maxForce: 3
-  maxVolume: 1
 --- !u!64 &3375781104537344328
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2050,9 +2029,6 @@ MonoBehaviour:
   keySound: {fileID: 8300000, guid: 4fd01d966dd100b40a46fd0fb133dd27, type: 3}
   bounceAmount: 0.0005
   bounceSpeed: 20
-  minForce: 0.2
-  maxForce: 3
-  maxVolume: 1
 --- !u!64 &7973551037995143899
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2261,9 +2237,6 @@ MonoBehaviour:
   keySound: {fileID: 8300000, guid: 2126c89f2f71ceb40a52fed75791dbd5, type: 3}
   bounceAmount: 0.0005
   bounceSpeed: 20
-  minForce: 0.2
-  maxForce: 3
-  maxVolume: 1
 --- !u!64 &4432778012032722865
 MeshCollider:
   m_ObjectHideFlags: 0

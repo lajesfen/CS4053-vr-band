@@ -1,8 +1,9 @@
+using Unity.Netcode;
 using UnityEngine;
 using System.Collections;
 
 [RequireComponent(typeof(AudioSource))]
-public class SimpleAudioPlayer : MonoBehaviour
+public class SimpleAudioPlayer : NetworkBehaviour
 {
     public AudioClip audioClip;
     public float fadeDuration = 1.0f;
@@ -16,7 +17,39 @@ public class SimpleAudioPlayer : MonoBehaviour
         audioSource.playOnAwake = false;
     }
 
+    // Call this locally or from other scripts
     public void PlaySound()
+    {
+        if (IsServer)
+        {
+            PlaySoundClientRpc();
+        }
+        else if (IsClient)
+        {
+            PlaySoundServerRpc();
+        }
+    }
+
+    public void StopSound()
+    {
+        if (IsServer)
+        {
+            StopSoundClientRpc();
+        }
+        else if (IsClient)
+        {
+            StopSoundServerRpc();
+        }
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    void PlaySoundServerRpc()
+    {
+        PlaySoundClientRpc();
+    }
+
+    [ClientRpc]
+    void PlaySoundClientRpc()
     {
         if (fadeCoroutine != null)
         {
@@ -24,15 +57,9 @@ public class SimpleAudioPlayer : MonoBehaviour
             audioSource.volume = 1.0f;
         }
 
-        // if (audioClip != null)
-        // {
-        //     audioSource.clip = audioClip;
-        //     audioSource.volume = 1.0f;
-        //     audioSource.Play();
-        // }
         if (audioClip != null)
         {
-            audioSource.PlayOneShot(audioClip, 1.0f); // Volume = 1.0
+            audioSource.PlayOneShot(audioClip, 1.0f);
         }
         else
         {
@@ -40,7 +67,14 @@ public class SimpleAudioPlayer : MonoBehaviour
         }
     }
 
-    public void StopSound()
+    [ServerRpc(RequireOwnership = false)]
+    void StopSoundServerRpc()
+    {
+        StopSoundClientRpc();
+    }
+
+    [ClientRpc]
+    void StopSoundClientRpc()
     {
         if (audioSource.isPlaying)
         {
