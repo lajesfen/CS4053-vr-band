@@ -112,7 +112,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0925e4005b598d94894323b84101f4cd, type: 3}
   snareZoneY: 0.3
   minVolume: 0.3
-  maxVolume: 1
+  maxVolume: 2
   maxForce: 5
 --- !u!65 &4177960981599600065
 BoxCollider:
@@ -157,7 +157,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
