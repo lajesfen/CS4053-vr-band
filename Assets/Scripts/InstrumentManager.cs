@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using Unity.Netcode;
 using UnityEngine;
 
-public class InstrumentManager : MonoBehaviour
+public class InstrumentManager : NetworkBehaviour
 {
     [System.Serializable]
     public class NamedPrefab
@@ -13,19 +13,51 @@ public class InstrumentManager : MonoBehaviour
     }
 
     public List<NamedPrefab> prefabs;
+    private Dictionary<string, GameObject> spawnedObjects = new Dictionary<string, GameObject>();
+
+    public override void OnNetworkSpawn()
+    {
+        if (!IsServer)
+        {
+            gameObject.SetActive(false); // Or Destroy(gameObject); if you prefer
+        }
+    }
 
     public void SpawnByName(string prefabName)
     {
+        if (!IsServer) return; // Just in case
+
+
         foreach (var item in prefabs)
         {
             if (item.name == prefabName && item.prefab != null)
             {
+                // If already spawned, destroy the old one
+                if (spawnedObjects.TryGetValue(prefabName, out GameObject existing))
+                {
+                    if (existing != null)
+                    {
+                        NetworkObject existingNetObj = existing.GetComponent<NetworkObject>();
+                        if (existingNetObj != null && existingNetObj.IsSpawned)
+                        {
+                            existingNetObj.Despawn(true); // Clean up networked object
+                        }
+                        else
+                        {
+                            Destroy(existing);
+                        }
+                    }
+
+                    spawnedObjects.Remove(prefabName);
+                }
+
                 GameObject obj = Instantiate(item.prefab, item.spawnLocation.position, item.spawnLocation.rotation);
 
                 NetworkObject netObj = obj.GetComponent<NetworkObject>();
                 if (netObj != null)
                 {
                     netObj.Spawn(true);
+                    spawnedObjects[prefabName] = obj;
                 }
                 else
                 {
@@ -37,10 +69,5 @@ public class InstrumentManager : MonoBehaviour
         }
 
         Debug.LogWarning($"Prefab with name '{prefabName}' not found.");
-    }
-
-    public void SpawnKeyboard()
-    {
-        SpawnByName("keyboard");
     }
 }
