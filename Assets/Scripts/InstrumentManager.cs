@@ -27,6 +27,21 @@ public class InstrumentManager : NetworkBehaviour
     {
         if (!IsServer) return; // Just in case
 
+        // handle extras
+        if (prefabName == "maracas")
+        {
+            SpawnByName("extra_maraca");
+        }
+        else if (prefabName == "xylophone")
+        {
+            SpawnByName("extra_xylostick_1");
+            SpawnByName("extra_xylostick_2");
+        }
+        else if (prefabName == "drums")
+        {
+            SpawnByName("extra_drumstick_1");
+            SpawnByName("extra_drumstick_2");
+        }
 
         foreach (var item in prefabs)
         {
